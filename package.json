@@ -2,6 +2,8 @@
   "scripts": {
     "frontend:install": "export NODE_OPTIONS=--openssl-legacy-provider && cd udagram-frontend && npm install",
     "backend:install": "export NODE_OPTIONS=--openssl-legacy-provider && cd udagram-api && npm install",
+    "frontend:test": "cd udagram-frontend && npm run test",
+    "backend:test": "cd udagram-api && npm run test",
     "frontend:build": "cd udagram-frontend && npm run build",
     "backend:build": "cd udagram-api && npm run build",
     "frontend:deploy": "cd udagram-frontend && npm run deploy",
