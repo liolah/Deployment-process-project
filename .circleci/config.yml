@@ -39,7 +39,7 @@ jobs:
 workflows:
   build-deploy:
     jobs:
-      - build:
+      - lol:
           filters:
             branches:
               only: master
