@@ -12,7 +12,7 @@
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp src/package-www.json www/package.json && cp -rf src/.elasticbeanstalk www",
     "build:zip": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp src/package-www.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\"",
-    "deploy": "cd www && eb deploy"
+    "deploy": "cd www && chmod +x ./bin/backend-deploy.sh && ./bin/backend-deploy.sh"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
