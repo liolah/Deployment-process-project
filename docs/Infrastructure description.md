@@ -1,6 +1,4 @@
-## Infrastructure description and pipeline process
-
-### Infrastructure description
+# Infrastructure description
 
 - To deploy the app you have to provide these resources in order. Later deployment steps require endpoints that will be acquired after the provision of previous services.
 
@@ -20,16 +18,3 @@ The resources required by the app:
    ii. Create a new bucket and upload the contents of the build folder. Make sure to enable public access and ACLs.
    iii. Enable static web hosting.
    iv. Modify the bucket policy to enable public read.
-
-### pipeline process
-
-- The steps in the pipeline:
-  1. Install node, AWS CLI, and EB CLI orbs.
-  2. Install node
-  3. Setup AWS CLI and EB CLI with the IAM credentials provided in the environment variables.
-  4. Install the frontend dependencies.
-  5. Install the backend dependencies.
-  6. Build the frontend application.
-  7. Build the backend application.
-  8. Deploy the frontend application.
-  9. Deploy the backend application.
